@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassThrough("css")
   return {
     markdownTemplateEngine: "md",
 
