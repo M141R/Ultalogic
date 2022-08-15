@@ -1,0 +1,25 @@
+/* src/css/tailwind.css*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono&family=Space+Grotesk:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-bold text-4xl font-head mb-5;
+  }
+}
+
+@layer components {
+  .btn {
+    color: #0d0d0d;
+    background: #c1fba4;
+    border: 1px solid #0d0d0d;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: bold;
+  }
+}
