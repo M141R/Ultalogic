@@ -10,6 +10,21 @@
   h1 {
     @apply font-bold text-4xl font-head mb-5;
   }
+  h2 {
+    @apply font-bold text-3xl font-head mb-5;
+  }
+  h3 {
+    @apply font-bold text-2xl font-head mb-5;
+  }
+  h4 {
+    @apply font-bold text-xl font-head mb-5;
+  }
+  p {
+    @apply mb-4;
+  }
+  section {
+    @apply mb-4;
+  }
 }
 
 @layer components {
@@ -17,9 +32,12 @@
     color: #0d0d0d;
     background: #c1fba4;
     border: 1px solid #0d0d0d;
-    box-shadow: 4px 4px 0px #000000;
+    box-shadow: 2px 2px 0px #000000;
     border-radius: 5px;
-    padding: 7px 20px;
+    padding: 8px 20px;
     font-weight: bold;
+  }
+  .btn-secondary {
+    @apply text-dark bg-transparent shadow rounded py-2 px-5 font-bold hover:bg-dark hover:text-white;
   }
 }
