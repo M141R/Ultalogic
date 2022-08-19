@@ -1,7 +1,8 @@
 ---
 title: Test 2
 description: Second Testing Post
-image: https://images.unsplash.com/photo-1576502202167-791eca35a78d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
+image: /assets/img/2.jpg
+date: 2022-08-19
 ---
 
 # Lorem ipsum

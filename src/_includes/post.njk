@@ -2,6 +2,87 @@
 layout: base.njk
 ---
 
-<section class="m-auto prose lg:prose-lg xl:prose-xl">
+<section
+  class="pt-5 m-auto prose prose-slate lg:prose-lg xl:prose-xl prose-img:rounded-md prose-img:shadow-md prose-img:shadow-slate-600 prose-a:font-extra prose-a:uppercase prose-a:underline prose-a:underline-offset-4"
+>
+  <h1 class="text-center">{{ title }}</h1>
+  <p class="text-center">{{ description }}</p>
+  <div class="flex justify-center font-extra items-center not-prose">
+    <p>
+      {{ date | postDate }}
+      <span class="ml-4">|</span>
+    </p>
+    <p class="ml-4">{{ content | readingTime }} read</p>
+  </div>
+  <img src="{{ image }}" alt="Post Cover Image" />
   {{ content | safe }}
+  <div
+    class="flex justify-between font-extra uppercase border-t-2 border-slate-300 pt-4"
+  >
+    <div class="tag-list">
+      {%- for tag in tags | filterTagList -%} {%- set tagUrl %}/tags/{{
+        tag | slug
+      }}/{% endset -%}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+      {%- endfor %}
+    </div>
+    <div class="flex not-prose items-center">
+      <p class="m-0">Share</p>
+      <a class="ml-3" id="copyUrlButton" onclick="copyUrl()">
+        <img src="{{ '/assets/illustration/link.svg' | url }}" alt="Copy URL" />
+      </a>
+      <a
+        class="ml-3"
+        href="https://api.whatsapp.com/send?text={{ title }} 
+      https://8080-mihir27-blogv2-udl138jupx8.ws-us47.gitpod.io/{{ page.url }}"
+      >
+        <img
+          src="{{ '/assets/illustration/whatsapp.svg' | url }}"
+          alt="Share on Whatsapp"
+        />
+      </a>
+      <a
+        class="ml-3"
+        href="https://twitter.com/share?url=https://8080-mihir27-blogv2-udl138jupx8.ws-us47.gitpod.io/{{
+          page.url
+        }}&text={{ title }}"
+      >
+        <img
+          src="{{ '/assets/illustration/twitter.svg' | url }}"
+          alt="Share on Twitter"
+        />
+      </a>
+      <a
+        class="ml-3"
+        href="https://www.facebook.com/sharer.php?u=https://twitter.com/share?url=https://8080-mihir27-blogv2-udl138jupx8.ws-us47.gitpod.io/{{
+          page.url
+        }}"
+      >
+        <img
+          src="{{ '/assets/illustration/facebook.svg' | url }}"
+          alt="Share on Facebook"
+        />
+      </a>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 border border-dark rounded-2xl mt-2 not-prose">
+    {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+    <div class="grid grid-rows-2">
+      <p class="py-2 px-4 m-0 font-bold border-b border-dark">Previous Post:</p>
+      {% if previousPost %}
+      <a class="font-extra py-2 px-4" href="{{ previousPost.url }}">{{
+        previousPost.data.title
+      }}</a
+      >{% endif %}
+    </div>
+    <div class="grid grid-rows-2 border-l border-dark text-right">
+      <p class="py-1 px-4 m-0 font-bold border-b border-dark">Next Post:</p>
+      {% if nextPost %}
+      <a class="font-extra py-2 px-4" href="{{ nextPost.url }}">{{
+        nextPost.data.title
+      }}</a
+      >{% endif %}
+    </div>
+  </div>
 </section>

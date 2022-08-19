@@ -1,11 +1,16 @@
 ---
-title: Test 1
-description: First Testing Post
-image: https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
+title: The best email newsletter software in 2022
+description: Build subscriber lists, customize emails, and send newsletters with these email newsletter platforms for your business.
+image: /assets/img/1.jpg
+date: 2022-08-19
+tags: email
 ---
+Changes happening across search algorithms and social media feeds make one thing crystal clear: it's never been more important for businesses to own the channels where they communicate with customers.
 
-# Lorem ipsum
+Automate [your](https://google.com) email marketing
+Reach your audience
+Email is one such channel—and it's stood the test of time.
 
-dolor sit amet consectetur adipisicing elit. Voluptas unde suscipit doloribus maxime maiores dolorem autem ea fuga, soluta libero quod quis recusandae ex fugiat nisi obcaecati. Voluptatem, repudiandae libero, veniam esse culpa sequi maiores aspernatur tempore reprehenderit minus, quas repellendus tenetur quisquam impedit quo dolorum dolorem accusamus.
-Provident magnam minus illum ut hic. Praesentium in non laborum recusandae asperiores soluta sit nulla voluptatibus animi excepturi aut quibusdam molestiae, iste facere explicabo eius voluptatum quas similique ut voluptas, ducimus deleniti? Quo sapiente itaque fugiat asperiores consequatur, ipsam non ex distinctio qui magnam ad dicta nesciunt amet tempora modi unde quae nam debitis et deserunt, a possimus aspernatur, eligendi numquam.
-Iste praesentium alias quas consequuntur, rerum sit quibusdam. Sed nisi ipsum voluptatem! Deleniti, ex? Nobis ullam nam aspernatur aut totam incidunt iusto sapiente nisi asperiores laudantium, quasi quos molestiae culpa, aliquam architecto facilis, provident amet odio! Quaerat debitis deserunt et pariatur atque cum, ipsum nemo eveniet ab maiores corporis voluptates nihil illum nam delectus dolor optio quae, a expedita assumenda, iusto modi. Voluptates minus, cumque aspernatur iusto incidunt velit ea eveniet porro animi debitis repellat iure sit accusamus odit consequuntur adipisci quisquam atque maxime perferendis laudantium ex commodi sequi. Quia corporis ad quas voluptatibus corrupti dolore consectetur. Eum atque iusto autem aut minima suscipit quidem amet. At reiciendis odio mollitia labore laudantium, temporibus pariatur voluptatibus voluptates ex nemo totam ratione eaque dolorem praesentium amet eum cupiditate! Recusandae placeat quae iusto dolorum illo iste! Consectetur, impedit! Modi.
+Today, email newsletters run the gamut from small-scale personal notes to massive automated campaigns—and so does newsletter software. No matter where on the spectrum your email marketing operation falls, there are tons of email newsletter services that make it quick and easy to send professional-looking emails to hundreds or thousands of subscribers.
+
+The thing is, there are so many email newsletter tools out there. In nearly a decade of working in marketing, I've used my fair share of them, and I know it can feel overwhelming to choose the right one for you. To help, I considered more than 60 different apps and tested dozens of them to help you choose your email marketing software. Based on that testing, these are the six best newsletter platforms.
