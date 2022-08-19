@@ -8,19 +8,19 @@
 
 @layer base {
   h1 {
-    @apply font-bold text-4xl font-head mb-5;
+    @apply font-bold text-4xl font-head mb-5 mt-3;
   }
   h2 {
-    @apply font-bold text-3xl font-head mb-5;
+    @apply font-bold text-3xl font-head mb-4 mt-3;
   }
   h3 {
-    @apply font-bold text-2xl font-head mb-5;
+    @apply font-bold text-2xl font-head mb-4 mt-3;
   }
   h4 {
-    @apply font-bold text-xl font-head mb-5;
+    @apply font-bold text-xl font-head mb-3 mt-3;
   }
   p {
-    @apply mb-4;
+    @apply mb-3;
   }
   section {
     @apply mb-4;
@@ -38,6 +38,6 @@
     font-weight: bold;
   }
   .btn-secondary {
-    @apply text-dark bg-transparent shadow rounded py-2 px-5 font-bold hover:bg-dark hover:text-white;
+    @apply text-dark bg-transparent shadow rounded py-2 px-5 font-bold border-2 border-dark hover:bg-dark hover:text-white;
   }
 }
