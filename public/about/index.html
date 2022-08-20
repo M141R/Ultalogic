@@ -10,12 +10,16 @@
   <body class="container font-body mx-auto px-2 text-dark">
     <header class="py-4">
   <nav class="flex flex-row">
-    <a href="/">UltaLogic</a>
+    <a href="/">
+      <img src="/assets/illustration/logo.svg" alt="" />
+    </a>
     <ul class="ml-auto flex gap-2">
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
+      <a class="text-neutral-600 hover:text-neutral-900" href="/">Home</a>
+      <a class="text-neutral-600 hover:text-neutral-900" href="/blog">Blog</a>
+      <a class="text-neutral-600 hover:text-neutral-900" href="/about">About</a>
+      <a class="text-neutral-600 hover:text-neutral-900" href="/contact"
+        >Contact</a
+      >
     </ul>
   </nav>
 </header>
@@ -41,5 +45,41 @@
 </section>
 
     </main>
+    <footer class="flex justify-between bg-gray-200 px-7 py-4 mt-8 rounded-t-lg">
+  <a href="/">
+    <img src="/assets/illustration/logo.svg" alt="" />
+  </a>
+  <div class="flex gap-5">
+    <div class="flex flex-col">
+      <p class="font-head">Navigation</p>
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="flex flex-col">
+      <p class="font-head">Newsletters</p>
+      <a href="#">Developer</a>
+      <a href="#">Designer</a>
+    </div>
+    <div class="flex flex-col gap-1">
+      <p class="font-head">Social</p>
+      <a href="#">
+        <img
+          class="inline"
+          src="/assets/illustration/discord.svg"
+          alt=""
+        />
+      </a>
+      <a href="#"
+        ><img
+          class="inline"
+          src="/assets/illustration/pinterest.svg"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
   </body>
 </html>

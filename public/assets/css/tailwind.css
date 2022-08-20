@@ -1,4 +1,4 @@
-/* src/css/tailwind.css*/
+/* src/assets/css/tailwind.css*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono&family=Space+Grotesk:wght@700&display=swap");
 
@@ -1510,12 +1510,38 @@ section{
   margin-top: 0.5rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
 
 .grid{
   display: grid;
+}
+
+.w-max{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .max-w-lg{
@@ -1564,6 +1590,14 @@ section{
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -1576,12 +1610,36 @@ section{
   gap: 0.5rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .rounded-md{
   border-radius: 0.375rem;
 }
 
 .rounded-2xl{
   border-radius: 1rem;
+}
+
+.rounded-t-md{
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.rounded-r-md{
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.rounded-t-lg{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-r-lg{
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .border{
@@ -1615,6 +1673,26 @@ section{
   background-color: rgb(144 241 239 / var(--tw-bg-opacity));
 }
 
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 13 13 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -1622,6 +1700,11 @@ section{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-2{
@@ -1644,6 +1727,15 @@ section{
   padding-right: 1rem;
 }
 
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
 .pt-5{
   padding-top: 1.25rem;
 }
@@ -1664,6 +1756,10 @@ section{
   font-family: 'Inter', sans-serif;
 }
 
+.font-head{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .font-extra{
   font-family: 'JetBrains Mono', monospace;
 }
@@ -1681,6 +1777,16 @@ section{
   color: rgb(13 13 13 / var(--tw-text-opacity));
 }
 
+.text-neutral-600{
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1692,8 +1798,18 @@ section{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.contrast-200{
+  --tw-contrast: contrast(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+
+.hover\:text-neutral-900:hover{
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
 .prose-a\:font-extra :is(:where(a):not(:where([class~="not-prose"] *))){

@@ -31,7 +31,7 @@ title: Home
     </div>
   </div>
 </section>
-<section class="flex flex-col-reverse items-center p-5 md:flex-row">
+<section class="flex flex-col-reverse items-center px-5 md:flex-row">
   <div>
     <h2>Designer</h2>
     <p class="max-w-md">
@@ -51,7 +51,7 @@ title: Home
 </section>
 <section>
   {% set maxPosts = collections.posts.length | min(2) %}
-  <h2>Blog</h2>
+  <h2 class="pb-2">Blog</h2>
   <div class="grid grid-row-2 gap-5 md:grid-cols-2">
     {% set postslist = collections.posts | head(-4) %} {% set postslistCounter =
     collections.posts | length %} {% include "recent.njk" %}
