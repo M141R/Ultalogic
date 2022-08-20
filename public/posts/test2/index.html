@@ -23,7 +23,7 @@
     <main>
       
 <section
-  class="pt-5 m-auto prose prose-slate lg:prose-lg xl:prose-xl prose-img:rounded-md prose-img:shadow-md prose-img:shadow-slate-600 prose-a:font-extra prose-a:uppercase prose-a:underline prose-a:underline-offset-4"
+  class="pt-5 m-auto prose prose-neutral lg:prose-lg xl:prose-xl prose-img:rounded-md prose-img:shadow-md prose-img:shadow-slate-600 prose-a:font-extra prose-a:uppercase prose-a:underline prose-a:underline-offset-4"
 >
   <h1 class="text-center">Test 2</h1>
   <p class="text-center">Second Testing Post</p>
@@ -80,17 +80,21 @@ Iste praesentium alias quas consequuntur, rerum sit quibusdam. Sed nisi ipsum vo
       </a>
     </div>
   </div>
-  <div class="grid grid-cols-2 border border-dark rounded-2xl mt-2 not-prose">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 border border-dark rounded-2xl mt-2 not-prose"
+  >
     
     
-    <div class="grid grid-rows-2">
+    <div class="grid custom-grid">
       <p class="py-2 px-4 m-0 font-bold border-b border-dark">Previous Post:</p>
       
       <a class="font-extra py-2 px-4" href="/posts/test1/">The best email newsletter software in 2022</a
       >
     </div>
-    <div class="grid grid-rows-2 border-l border-dark text-right">
-      <p class="py-1 px-4 m-0 font-bold border-b border-dark">Next Post:</p>
+    <div
+      class="grid custom-grid border-t md:border-t-0 md:border-l border-dark text-right"
+    >
+      <p class="py-2 px-4 m-0 font-bold border-b border-dark">Next Post:</p>
       
     </div>
   </div>

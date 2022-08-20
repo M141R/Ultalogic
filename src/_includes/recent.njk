@@ -1,7 +1,11 @@
 {% for post in postslist | reverse %}
 
 <article>
-  <img src="{{ post.data.image }}" alt="" />
+  <img
+    class="rounded-md shadow-md shadow-slate-600"
+    src="{{ post.data.image }}"
+    alt=""
+  />
   <div>
     <h2>{{ post.data.title }}</h2>
     <p>{{ post.data.description }}</p>
