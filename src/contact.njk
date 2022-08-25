@@ -5,13 +5,23 @@ title: Contact
 
 <section>
   <h1>Contact</h1>
-  <form class="grid max-w-lg gap-3" name="contact" netlify>
+  <form class="grid max-w-lg gap-3" name="contact" method="POST" netlify>
     <span> First Name </span
-    ><input class="rounded-md" type="text" placeholder="John" />
+    ><input class="rounded-md" type="text" name="Name" placeholder="John" />
     <span> Email Address </span>
-    <input class="rounded-md" type="email" placeholder="example@example.com" />
+    <input
+      class="rounded-md"
+      type="email"
+      name="Email"
+      placeholder="example@example.com"
+    />
     <span> Message </span>
-    <textarea class="rounded-md" rows="4" placeholder="Message"></textarea>
+    <textarea
+      class="rounded-md"
+      rows="4"
+      name="Message"
+      placeholder="Message"
+    ></textarea>
     <button class="btn w-max" type="submit">Submit</button>
   </form>
 </section>
