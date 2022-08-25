@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}" />
     <title>{{ title }}</title>
+    <script src="https://swetrix.org/swetrix.js" defer></script>
   </head>
   <body class="container font-body mx-auto px-2 text-dark">
     {% include 'navbar.njk' %}
@@ -13,5 +14,26 @@
       {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialising the script with the Project ID
+        // you can find in the dashboard
+        swetrix.init("uYcRI6LIStDY");
+
+        // Tracking page views
+        swetrix.trackViews();
+      });
+    </script>
+
+    <noscript>
+      <!--
+      Don't forget to change YOUR_PROJECT_ID in the link to your Project ID
+      -->
+      <img
+        src="https://api.swetrix.com/log/noscript?pid=uYcRI6LIStDY"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 </html>
