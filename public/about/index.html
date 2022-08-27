@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/tailwind.css" />
     <title>About</title>
+    <script src="https://swetrix.org/swetrix.js" defer></script>
   </head>
-  <body class="container font-body mx-auto px-2 text-dark">
+  <body class="container font-body mx-auto px-2 text-dark bg-white">
     <header class="py-4">
   <nav class="flex flex-row">
     <a href="/">
@@ -45,7 +46,7 @@
 </section>
 
     </main>
-    <footer class="flex justify-between bg-gray-200 px-7 py-4 mt-8 rounded-t-lg">
+    <footer class="flex justify-between bg-secondary px-7 py-4 mt-8 rounded-t-lg">
   <a href="/">
     <img src="/assets/illustration/logo.svg" alt="" />
   </a>
@@ -64,22 +65,32 @@
     </div>
     <div class="flex flex-col gap-1">
       <p class="font-head">Social</p>
-      <a href="#">
-        <img
-          class="inline"
-          src="/assets/illustration/discord.svg"
-          alt=""
-        />
-      </a>
-      <a href="#"
-        ><img
-          class="inline"
-          src="/assets/illustration/pinterest.svg"
-          alt=""
-      /></a>
+      <a href="#">Discord</a>
+      <a href="#">Pinterest</a>
     </div>
   </div>
 </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialising the script with the Project ID
+        // you can find in the dashboard
+        swetrix.init("uYcRI6LIStDY");
+
+        // Tracking page views
+        swetrix.trackViews();
+      });
+    </script>
+
+    <noscript>
+      <!--
+      Don't forget to change YOUR_PROJECT_ID in the link to your Project ID
+      -->
+      <img
+        src="https://api.swetrix.com/log/noscript?pid=uYcRI6LIStDY"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 </html>

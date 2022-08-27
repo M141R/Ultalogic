@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/tailwind.css" />
     <title>Contact</title>
+    <script src="https://swetrix.org/swetrix.js" defer></script>
   </head>
-  <body class="container font-body mx-auto px-2 text-dark">
+  <body class="container font-body mx-auto px-2 text-dark bg-white">
     <header class="py-4">
   <nav class="flex flex-row">
     <a href="/">
@@ -28,19 +29,29 @@
       
 <section>
   <h1>Contact</h1>
-  <form class="grid max-w-lg gap-3" name="contact" netlify>
+  <form class="grid max-w-lg gap-3" name="contact" method="POST" netlify>
     <span> First Name </span
-    ><input class="rounded-md" type="text" placeholder="John" />
+    ><input class="rounded-md" type="text" name="Name" placeholder="John" />
     <span> Email Address </span>
-    <input class="rounded-md" type="email" placeholder="example@example.com" />
+    <input
+      class="rounded-md"
+      type="email"
+      name="Email"
+      placeholder="example@example.com"
+    />
     <span> Message </span>
-    <textarea class="rounded-md" rows="4" placeholder="Message"></textarea>
+    <textarea
+      class="rounded-md"
+      rows="4"
+      name="Message"
+      placeholder="Message"
+    ></textarea>
     <button class="btn w-max" type="submit">Submit</button>
   </form>
 </section>
 
     </main>
-    <footer class="flex justify-between bg-gray-200 px-7 py-4 mt-8 rounded-t-lg">
+    <footer class="flex justify-between bg-secondary px-7 py-4 mt-8 rounded-t-lg">
   <a href="/">
     <img src="/assets/illustration/logo.svg" alt="" />
   </a>
@@ -59,22 +70,32 @@
     </div>
     <div class="flex flex-col gap-1">
       <p class="font-head">Social</p>
-      <a href="#">
-        <img
-          class="inline"
-          src="/assets/illustration/discord.svg"
-          alt=""
-        />
-      </a>
-      <a href="#"
-        ><img
-          class="inline"
-          src="/assets/illustration/pinterest.svg"
-          alt=""
-      /></a>
+      <a href="#">Discord</a>
+      <a href="#">Pinterest</a>
     </div>
   </div>
 </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialising the script with the Project ID
+        // you can find in the dashboard
+        swetrix.init("uYcRI6LIStDY");
+
+        // Tracking page views
+        swetrix.trackViews();
+      });
+    </script>
+
+    <noscript>
+      <!--
+      Don't forget to change YOUR_PROJECT_ID in the link to your Project ID
+      -->
+      <img
+        src="https://api.swetrix.com/log/noscript?pid=uYcRI6LIStDY"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 </html>
