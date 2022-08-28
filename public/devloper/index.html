@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/tailwind.css" />
-    <title>Blog</title>
+    <title>Developer</title>
     <script src="https://swetrix.org/swetrix.js" defer></script>
   </head>
-  <body
-    class="container font-body mx-auto px-2 flex flex-col text-dark bg-white"
-  >
+  <body class="container font-body mx-auto px-2 text-dark bg-white">
     <header class="py-4">
   <nav class="flex flex-row">
     <a href="/">
@@ -30,32 +28,14 @@
     <main>
       
 <section>
-  <h1>Blog</h1>
-  <div class="grid grid-row-2 gap-5 md:grid-cols-2">
-     <article class="snippet">
-  <img src="/assets/img/2.jpg" alt="" />
-  <div class="info">
-    <h2>Test 2</h2>
-    <date class="font-extra">Aug 19, 2022</date>
-    <p>Second Testing Post</p>
-    <a href="/posts/test2/" class="btn">Read More</a>
-  </div>
-</article>
-  <article class="snippet">
-  <img src="/assets/img/1.jpg" alt="" />
-  <div class="info">
-    <h2>The best email newsletter software in 2022</h2>
-    <date class="font-extra">Aug 19, 2022</date>
-    <p>Build subscriber lists, customize emails, and send newsletters with these email newsletter platforms for your business.</p>
-    <a href="/posts/test1/" class="btn">Read More</a>
-  </div>
-</article>
- 
-  </div>
+  <h1>Devloper</h1>
+  <p>
+    <img src="/assets/illustration/developer.svg" alt="" />
+  </p>
 </section>
 
     </main>
-    <footer class="flex items-center bg-secondary px-7 py-4 rounded-t-lg mt-auto">
+    <footer class="flex items-center bg-secondary px-7 py-4 mt-8 rounded-t-lg">
   <a href="/">
     <img src="/assets/illustration/logo.svg" alt="" />
   </a>
@@ -69,8 +49,8 @@
     </div>
     <div class="flex flex-col">
       <p class="font-head">Newsletters</p>
-      <a href="/developer">Developer</a>
-      <a href="/designer">Designer</a>
+      <a href="#">Developer</a>
+      <a href="#">Designer</a>
     </div>
     <div class="flex flex-col">
       <p class="font-head">Social</p>
@@ -84,7 +64,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         // Initialising the script with the Project ID
         // you can find in the dashboard
-        // swetrix.init("uYcRI6LIStDY");
+        swetrix.init("uYcRI6LIStDY");
 
         // Tracking page views
         swetrix.trackViews();

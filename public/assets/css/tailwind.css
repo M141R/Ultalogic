@@ -625,6 +625,10 @@ section{
   margin-bottom: 1rem;
 }
 
+body {
+  height: 100vh;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1471,6 +1475,18 @@ section{
   grid-template-rows: auto 1fr;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -1484,8 +1500,8 @@ section{
   margin-right: auto;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mt-auto{
+  margin-top: auto;
 }
 
 .ml-auto{
@@ -1504,12 +1520,28 @@ section{
   margin-top: 0.5rem;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
+.table-cell{
+  display: table-cell;
+}
+
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .w-max{
@@ -1572,10 +1604,6 @@ section{
   gap: 0.75rem;
 }
 
-.gap-1{
-  gap: 0.25rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
@@ -1586,6 +1614,10 @@ section{
 
 .rounded-2xl{
   border-radius: 1rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-t-lg{
@@ -1619,24 +1651,14 @@ section{
   border-color: rgb(47 47 48 / var(--tw-border-opacity));
 }
 
-.bg-\[\#F9EFE4\]{
+.bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(249 239 228 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFFFF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 239 228 / var(--tw-bg-opacity));
 }
 
 .p-5{
@@ -1676,6 +1698,11 @@ section{
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-2{
@@ -1718,7 +1745,7 @@ section{
   text-transform: uppercase;
 }
 
-.text-\[\#2F2F30\]{
+.text-dark{
   --tw-text-opacity: 1;
   color: rgb(47 47 48 / var(--tw-text-opacity));
 }
@@ -1728,9 +1755,9 @@ section{
   color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
-.text-dark{
+.text-gray-800{
   --tw-text-opacity: 1;
-  color: rgb(47 47 48 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -1742,6 +1769,10 @@ section{
 .shadow-slate-600{
   --tw-shadow-color: #475569;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline{
+  outline-style: solid;
 }
 
 .hover\:bg-transparent:hover{

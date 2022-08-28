@@ -25,6 +25,9 @@
   section {
     @apply mb-4;
   }
+  body {
+    height: 100vh;
+  }
 }
 
 @layer components {
