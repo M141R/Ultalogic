@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}" />
     <title>{{ title }}</title>
-    <script src="https://swetrix.org/swetrix.js" defer></script>
+    <meta name="title" content="{{ site.metatitle }}" />
+    <meta name="description" content="{{ site.metadescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ultalogic.tech{{ page.url }}" />
+    <meta property="og:title" content="{{ site.metatitle }}" />
+    <meta property="og:description" content="{{ site.metadescription }}" />
+    <meta property="og:image" content="{{ site.url + image }}" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://ultalogic.tech{{ page.url }}"
+    />
+    <meta property="twitter:title" content="{{ site.metatitle }}" />
+    <meta property="twitter:description" content="{{ site.metadescription }}" />
+    <meta property="twitter:image" content="{{ site.url + image }}" />
+    <script async src="https://swetrix.org/swetrix.js" defer></script>
   </head>
   <body
     class="container font-body mx-auto px-2 flex flex-col text-dark bg-white"

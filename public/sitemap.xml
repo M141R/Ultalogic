@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>ultalogic.tech/posts/test1/</loc>
+        <lastmod>2022-08-19T00:00:00.000Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/posts/test2/</loc>
+        <lastmod>2022-08-19T00:00:00.000Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/blog/</loc>
+        <lastmod>2022-08-19T06:41:27.812Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/about/</loc>
+        <lastmod>2022-08-20T02:28:02.768Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/contact/</loc>
+        <lastmod>2022-08-22T14:29:07.570Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/</loc>
+        <lastmod>2022-08-22T14:29:07.570Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/admin/</loc>
+        <lastmod>2022-08-24T16:02:51.866Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/developer/</loc>
+        <lastmod>2022-08-28T09:47:33.523Z</lastmod>
+    </url>
+    
+    <url>
+        <loc>ultalogic.tech/designer/</loc>
+        <lastmod>2022-08-28T10:33:47.032Z</lastmod>
+    </url>
+    
+</urlset>
