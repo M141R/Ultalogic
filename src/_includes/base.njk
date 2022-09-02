@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}" />
+    <title>{{ title }}</title>
+    <meta name="title" content="{{ site.metatitle }}" />
+    <meta name="description" content="{{ site.metadescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ultalogic.tech{{ page.url }}" />
+    <meta property="og:title" content="{{ site.metatitle }}" />
+    <meta property="og:description" content="{{ site.metadescription }}" />
+    <meta property="og:image" content="{{ site.image }}" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://ultalogic.tech{{ page.url }}"
+    />
+    <meta property="twitter:title" content="{{ site.metatitle }}" />
+    <meta property="twitter:description" content="{{ site.metadescription }}" />
+    <meta property="twitter:image" content="{{ site.image }}" />
+    <script async src="https://swetrix.org/swetrix.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}" />
-  <title>{{ title }}</title>
-  <meta name="title" content="{{ site.metatitle }}" />
-  <meta name="description" content="{{ site.metadescription }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ultalogic.tech{{ page.url }}" />
-  <meta property="og:title" content="{{ site.metatitle }}" />
-  <meta property="og:description" content="{{ site.metadescription }}" />
-  <meta property="og:image" content="{{ site.image }}" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://ultalogic.tech{{ page.url }}" />
-  <meta property="twitter:title" content="{{ site.metatitle }}" />
-  <meta property="twitter:description" content="{{ site.metadescription }}" />
-  <meta property="twitter:image" content="{{ site.image }}" />
-  <script async src="https://swetrix.org/swetrix.js" defer></script>
-</head>
+  <body
+    class="container font-body mx-auto px-2 flex flex-col text-dark bg-white"
+  >
+    {% include 'navbar.njk' %}
+    <main class="mb-4">
+      {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %}
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialising the script with the Project ID
+        // you can find in the dashboard
+        swetrix.init("uYcRI6LIStDY");
 
-<body class="container font-body mx-auto px-2 flex flex-col text-dark bg-white">
-  {% include 'navbar.njk' %}
-  <main>
-    {{ content | safe }}
-  </main>
-  {% include 'footer.njk' %}
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Initialising the script with the Project ID
-      // you can find in the dashboard
-      swetrix.init("uYcRI6LIStDY");
+        // Tracking page views
+        swetrix.trackViews();
+      });
+    </script>
 
-      // Tracking page views
-      swetrix.trackViews();
-    });
-  </script>
-
-  <noscript>
-    <!--
+    <noscript>
+      <!--
       Don't forget to change YOUR_PROJECT_ID in the link to your Project ID
       -->
-    <img src="https://api.swetrix.com/log/noscript?pid=uYcRI6LIStDY" alt=""
-      referrerpolicy="no-referrer-when-downgrade" />
-  </noscript>
-</body>
-
+      <img
+        src="https://api.swetrix.com/log/noscript?pid=uYcRI6LIStDY"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
+  </body>
 </html>

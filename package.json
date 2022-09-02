@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Mihir-27/Ultalogic#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "luxon": "^3.0.1"
   },

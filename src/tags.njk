@@ -1,0 +1,25 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: base.njk
+eleventyComputed:
+  title: Tagged “{{ tag }}” - Ultalogic Blog
+permalink: /tags/{{ tag | slug }}/
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+<div class="grid grid-row-2 gap-5 md:grid-cols-2">
+  {% set postslist = collections[ tag ] %} {% include "recent.njk" %}
+</div>
+<p class="mt-4">
+  See <a class="font-extra font-bold" href="{{ '/tags/' | url }}">all tags</a>.
+</p>
