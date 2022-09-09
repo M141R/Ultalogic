@@ -2,16 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>ultalogic.tech/posts/test1/</loc>
-        <lastmod>2022-08-19T00:00:00.000Z</lastmod>
-    </url>
-    
-    <url>
-        <loc>ultalogic.tech/posts/test2/</loc>
-        <lastmod>2022-08-19T00:00:00.000Z</lastmod>
-    </url>
-    
-    <url>
         <loc>ultalogic.tech/blog/</loc>
         <lastmod>2022-08-19T06:41:27.812Z</lastmod>
     </url>
@@ -44,11 +34,6 @@
     <url>
         <loc>ultalogic.tech/designer/</loc>
         <lastmod>2022-08-28T10:33:47.032Z</lastmod>
-    </url>
-    
-    <url>
-        <loc>ultalogic.tech/tags/email/</loc>
-        <lastmod>2022-09-02T14:33:22.778Z</lastmod>
     </url>
     
     <url>
